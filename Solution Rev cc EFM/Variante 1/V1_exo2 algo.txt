@@ -1,0 +1,19 @@
+    Var i,j : entier
+    Tab T[6] : entier
+Début
+
+    //Initialiser les valeurs tableau avec aléa
+    Pour i = 0 : 5 faire:
+        T[i] := aléa()*100+1
+    Fin Pour
+
+    //Parcourir les éléments de T et afficher les élement dont le carré et aussi présent
+    Pour i = 0 : 5 faire:
+        Pour j = 0 : 5 faire:
+            Si(T[j] == T[i]**2) alors
+                Écrire T[i]
+                Stop    //break
+            Fin Si
+        Fin Pour
+    Fin Pour
+

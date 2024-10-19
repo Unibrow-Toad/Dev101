@@ -1,0 +1,40 @@
+    Var n,i,counter,counter2: entier
+    Tab TDiv[],TDivInf100:entier
+Début 
+    Écrire 'Entrez un nombre'
+    Lire n
+    counter :=0
+    Redim TDiv[(n**1/2)+1]
+
+    //itérr les diviseurs de n et les ajoutez  à Tdiv
+
+    Pour i = 1 : (n**1/2)+1 faire:
+        Si (n%i==0) alors
+            TDiv[i] := i
+            counter := counter+1
+        Fin Si
+    Fin Pour
+    Redim TDiv[counter]
+
+    // itérer les élement de TDiv <100 et les ajouter a un nouveau tableau
+    Redim TDivInf100[counter]
+
+    counter2 := 0
+    Pour i = 0 : counter faire:
+        si (TDiv[i]<100) alors
+            TDivInf100[i] := TDiv[i]
+            counter2 := counter2 + 1
+        Fin Si
+    Fin Pour
+    Redim TDivInf100[counter2]
+
+    // affichage des diviseurs < 100
+    Écrire 'Les diviseurs de ', n, ' inférieurs à 100 sont : '
+    Pour i = 0 : counter2 faire:
+        Écrire TDivInf100[i]
+        Écrire ' '
+    Fin Pour
+Fin
+
+    
+
