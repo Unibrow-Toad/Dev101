@@ -10,8 +10,8 @@ Ce dépôt inclut :
 
 ## Table des Matières
 
-- [RevisionCC&&EFM.pdf](#Solution-Rev-cc-EFM) 
-- [AncienEFMAlgo.pdf](#EFM-Algo)
+- [RevisionCC&&EFM.pdf](#Solution-Rev-cc-EFM/) 
+- [AncienEFMAlgo.pdf](#EFM-Algo/)
 - [Commencer](#commencer)
 - 
 ##  {RevisionCC&&EFM.pdf}
