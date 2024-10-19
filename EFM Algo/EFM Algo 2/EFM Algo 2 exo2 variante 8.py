@@ -16,3 +16,21 @@ while True:
         break
     except:
         print("you must type a number")
+
+
+#exercice2.3 variante : 8 
+
+list=[]
+
+def nbr_pairs(n,list):
+    for x in range(1,n+1):
+        if x%2==0:
+            list.append(x)
+            
+while True:
+    n=input("type a number : ").strip()
+    if n.isdigit():
+        n=int(n)
+        break
+nbr_pairs(n,list)
+print(list)
