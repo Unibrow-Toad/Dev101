@@ -1,0 +1,17 @@
+  Var a,i:entier
+Début
+  Lire a
+  Si (a <= 1) alors
+    Écrire 'Le nombre n'est pas premier'
+    Stop
+  Fin Si
+  Pour i = 2 : a**1/2
+    Si a%i == 0
+    Écrire 'Le nombre n'est pas premier'
+    Stop
+    Fin Si
+  Fin Pour
+
+
+  
+  
