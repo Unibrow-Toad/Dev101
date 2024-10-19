@@ -10,9 +10,10 @@ Ce dépôt inclut :
 
 ## Table des Matières
 
-- [Série de Devoirs 1](#série-de-devoirs-1)
-- [Série de Devoirs 2](#série-de-devoirs-2)
+- [RevisionCC&&EFM.pdf](#Solution-Rev-cc-EFM) 
+- [AncienEFMAlgo.pdf](#EFM-Algo)
 - [Commencer](#commencer)
+- 
 ##  {RevisionCC&&EFM.pdf}
 
 Cette section contient les corrections de la  série  {RevisionCC&&EFM.pdf}
