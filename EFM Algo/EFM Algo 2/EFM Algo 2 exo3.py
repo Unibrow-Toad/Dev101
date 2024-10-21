@@ -1,10 +1,20 @@
 #--------------------------------------------Modules--------------------------------------------
-import faker,random
-from faker import Faker
+import random
 #--------------------------------------------Functions--------------------------------------------
 #function for adding a number of rooms to the list
 def AddRooms(Chambres):
+    #new code
     while True:
+        try:
+            n = int(input("Enter number of rooms to add: ") or 0)
+            if n < 0:
+                raise ValueError
+            break
+        except ValueError:
+            print("Please enter a valid positive integer")
+    Chambres.extend(sorted([{'num': random.randint(1, 100), 'numOfBeds': random.randint(1, 4), 'freeOrBooked': random.choice(['free', 'booked']), 'price': round(random.uniform(100, 500),2)} for i in range(n)], key=lambda x: x['num']))
+    #old code
+    '''while True:
         try:
             n = int(input("Enter number of rooms to add: "))
             break
@@ -12,18 +22,21 @@ def AddRooms(Chambres):
             print("Please enter a valid integer")
 
     for i in range(n):
-        Chambre = {'num': random.randint(1, 100), 'numOfBeds': random.randint(1, 4), 'freeOrBooked': random.choice(['free', 'booked']), 'price': random.randint(100, 500)}
+        Chambre = {'num': random.randint(1, 100), 'numOfBeds': random.randint(1, 4), 'freeOrBooked': random.choice(['free', 'booked']), 'price': random.uniform(100, 500)}
         Chambres.append(Chambre)
         Chambres.sort(key=lambda x: x['num'])
-
+'''
 #function for displaying all the rooms
 def DisplayAll(Chambres):
-    if len(Chambres) == 0:
+#new code
+    print('-' * 50);print("\n".join([f"{row['num']} {row['numOfBeds']} {row['freeOrBooked']} {row['price']}" for row in Chambres]) or print("There are no rooms", '-'*50, sep="\n"))
+#old code
+    '''if len(Chambres) == 0:
         print("There are no rooms",'-'*50,sep="\n")
         return
     for row in Chambres:
         print(f"{row['num']} {row['numOfBeds']} {row['freeOrBooked']} {row['price']}",sep="\t")
-    print('-' * 50)
+    print('-' * 50)'''
 
 #function for adding room manually
 def AddRoomManually(Chambres):
@@ -43,10 +56,10 @@ def AddRoomManually(Chambres):
             continue
     while True:
         try:
-            price = int(input("Enter price: "))
+            price = float(input("Enter price: "))
             break
         except ValueError:
-            print("Please enter a valid integer")
+            print("Please enter a valid float")
             continue
     while True:
         try:
@@ -57,12 +70,8 @@ def AddRoomManually(Chambres):
         except ValueError:
             print("Please enter free or booked")
 
-
-    Chambre = {'num': num, 'numOfBeds': numOfBeds, 'freeOrBooked': 'free', 'price': price}
-    Chambres.append(Chambre)
-    Chambres.sort(key=lambda x: x['num'])
-    DisplayAll(Chambres)
-
+    Chambres.append({'num': num, 'numOfBeds': numOfBeds, 'freeOrBooked': freeOrBooked, 'price': price});Chambres.sort(key=lambda x: x['num']);DisplayAll(Chambres)
+    
 #function for deleting a room by number
 def DeleteRoom(Chambres):
     while True:
@@ -103,6 +112,7 @@ Chambres =[]
 
 #--------------------------------------------Menu--------------------------------------------
 while True:
+    print('-'*50)
     print("A. Add  random rooms")
     print("1. Display all rooms")
     print("2. Delete a room by number")
