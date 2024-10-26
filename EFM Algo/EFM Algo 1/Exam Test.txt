@@ -1,0 +1,117 @@
+Ex1:
+
+Algorithme voyage_par_voiture
+variable  kilométre: Entier
+	  cout_par_km : Entier
+	  cout_total :Entier
+
+Début
+	Ecrire "Veuillez saisir le nombre de kilométres parcourus : "
+    	Lire kilométres
+    	Ecrire "Veuillez saisir le coot par kilométre : "
+    	Lire cout_par_km
+
+    	cout_total = kilométres * cout_par_km
+
+    	Si kilométres > 100 Alors
+        cout_total = cout_total * 0.90
+   	 Fin Si
+
+    	Ecrire "Le cout total du voyage est : ", cout_total
+Fin
+
+Ex2:
+
+Algorithme nombre_pair_ou_impair
+Variables nombre : Entier
+
+Début
+	Ecrire "Veuillez saisir un nombre entier :"
+	Lire nombre
+
+	Si nombre % 2 = 0 Alors
+        	Ecrire "Le nombre est pair"
+	Sinon
+		Ecrire "Le nombre est impair"
+	Fin Si
+Fin
+
+Ex3:
+
+Algorithme type_de_la_triangle
+Variables a,b,c : Reel
+
+Début
+
+    Ecrire "Entrez la longueur du premier côté : "
+    Lire a
+    Ecrire "Entrez la longueur du deuxième côté : "
+    Lire b
+    Ecrire "Entrez la longueur du troisième côté : "
+    Lire c
+
+    Si a <= 0 ou b <= 0 ou c <= 0 Alors
+        Ecrire "Les longueurs des côtés doivent être strictement positives."
+    Sinon
+        Si (a + b > c) et (a + c > b) et (b + c > a) Alors
+            Si a = b et b = c Alors
+                Ecrire "Le triangle est équilatéral."
+            Sinon Si a = b ou a = c ou b = c Alors
+                Ecrire "Le triangle est isocèle."
+            Sinon
+                Ecrire "Le triangle est scalène."
+        Sinon
+            Ecrire "Les longueurs saisies ne forment pas un triangle valide."
+        Fin Si
+    Fin Si
+Fin
+
+Ex4:
+Algorithme calculateur_de_la_note_finale
+Variables A,B,C,D,F : Constante
+	  score : Enteier
+
+Début
+
+    Répéter
+        Ecrire "Veuillez saisir le score de la premiére épreuve (0-100) :"
+        Lire score1
+    Jusqu'à (score1 >= 0 et score1 <= 100)
+
+    Répéter
+        Ecrire "Veuillez saisir le score de la deuxiéme épreuve (0-100) :"
+        Lire score2
+    Jusqu'à (score2 >= 0 et score2 <= 100)
+
+    Répéter
+        Ecrire "Veuillez saisir le score de la troisiéme épreuve (0-100) :"
+        Lire score3
+    Jusqu'à (score3 >= 0 et score3 <= 100)
+
+    noteFinale = (score1 * 0.25) + (score2 * 0.35) + (score3 * 0.40)
+
+    Si (noteFinale >= 90) Alors
+        mention = "A"
+    Sinon Si (noteFinale >= 80) Alors
+        mention = "B"
+    Sinon Si (noteFinale >= 70) Alors
+        mention = "C"
+    Sinon Si (noteFinale >= 60) Alors
+        mention = "D"
+    Sinon
+        mention = "F"
+
+    Ecrire "La note finale est : ", noteFinale
+    Ecrire "La mention est : ", mention
+
+Fin
+
+Ex5:
+
+Algorithme number_aléatoire
+
+
+
+
+
+	
