@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       #firstP{
+
+         font-size:1.2rem;/* 1 rem = 16px = font size de html(root)*/
+         background-color: rgb(60,120,30);/*#AB3 #AABB33*/
+         font-weight: bold;
+
+
+       }
+       .myDiv{
+        background-color: lightblue;
+       }
+       #secondP{
+        background-color: aquamarine;
+       }
+
+
+       #thirdP{
+        font-size:1.8em;
+
+        background: url('./bg1.png');
+        background-repeat: repeat-x;
+       /* background-size: cover;*/
+       }
+       .lastDiv{
+        height:600px;
+        background-color: rgba(10,50,150,.2);
+        border-color:blue;
+        border-style:solid;
+        border-width: 1;
+        background: url('./bg2.png');
+        background-repeat: no-repeat;
+        background-size:90px;
+        background-position: bottom center;
+       }
+
+    </style>
+</head>
+<body>
+    <!--paragraphe avec background color-->
+   <p id="firstP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi modi natus illo beatae nisi quis quisquam amet expedita obcaecati nesciunt aspernatur voluptate reprehenderit tempore illum error, quidem debitis voluptates nam, placeat odit, dicta qui? Maxime quibusdam necessitatibus tempora fugit!</p>
+    <div class="myDiv">
+        this is a text inside the div element
+        <p id="secondP">this paragraph has it s own background color ....</p>
+        we are still in the div element
+    </div>
+    <p id="thirdP">Background image ....</p>
+    <div class="lastDiv">Lorem ipsum dolor sit.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi magnam, vitae aliquid delectus laborum.</p>
+    </div>
+
+</body>
+</html>

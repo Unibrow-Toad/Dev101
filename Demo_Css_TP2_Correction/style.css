@@ -1,0 +1,11 @@
+.container{
+    height:70vh;
+    border:1px solid #A3F;
+    background: url('./bg3.png') no-repeat;
+    background-size: 90px;
+
+    padding: 80px;
+
+    background-origin: border-box;
+    
+}
