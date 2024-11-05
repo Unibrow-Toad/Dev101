@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+    label{
+        display: inline-block;
+        width:160px;
+
+        font-weight: bold;
+    }
+    #pays{
+        width: 210px;
+    }
+
+    button{
+        width:100px;
+        margin:6px;
+    }
+    button[type="reset"]{
+
+        background: linear-gradient(blue,white);
+    }
+    button[type="submit"]{
+
+background: linear-gradient(lime,green);
+}
+    form{
+        width:60%;
+        margin: auto;
+        background: linear-gradient(lightblue,silver);
+    }
+
+    </style>
+</head>
+<body>
+
+    <form action="form1.html" method="get">
+      <fieldset>
+         <legend><mark>Client</mark></legend>
+          <p>
+            <label for="title">Civilité</label>
+            <input type="radio" name="title" id="title">&nbsp;Mademoiselle&nbsp;
+            <input type="radio" name="title" id="title">&nbsp;Madame&nbsp; <input type="radio" name="title" id="title" checked>&nbsp;Monsieur
+          </p>
+          <p>
+            <label for="fullname">Nom/Prenom</label>
+            <input type="text" id="fullname" >
+          </p>
+
+          <p style=" height:80px;display: flex; align-items: center; ">
+            <label for="adress">Adresse</label>
+            <textarea name="adress" id="adress" rows="3" cols="25"></textarea>
+          </p>
+
+          <p>
+            <label for="city">City</label>
+            <input type="text" list="villes" id="city">
+            <datalist  id="villes">
+                <option value="Lausanne" selected>
+                <option value="Toulouse">
+                 <option value="Lille">
+                    <option value="Bourdeau">
+            </datalist>
+          </p>
+
+          <p>
+            <label for="pays">Pays</label>
+            <select name="pays" id="pays" multiple>
+                 <option value="Maroc">Maroc</option>
+                 <option value="Canada" selected>Canada</option>
+                 <option value="USA" selected>USA</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="os">OS</label>
+            <input type="checkbox" >Windows&nbsp;&nbsp;<input type="checkbox" >Mac&nbsp;&nbsp;<input type="checkbox" >Linux
+          </p>
+
+      </fieldset>
+       <p style="display: flex; justify-content: center;">
+            <button type="submit">Envoyer</button><button  type="reset">Vider</button>
+       </p>
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

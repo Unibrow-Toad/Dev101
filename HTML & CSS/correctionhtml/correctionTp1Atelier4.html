@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      table{
+      /*  border-collapse: collapse;*/
+      background-color: silver;
+      }
+      
+ 
+     /* table tr:last-child {
+        background-color: yellow;
+
+      }
+      table tr:nth-child(2) {
+        background-color: brown;
+
+      }
+      table tr:nth-child(3) {
+        background-color: lightsalmon;
+
+      }*/
+      table tr:first-child td:first-child{
+        border-bottom: 10px solid gray;
+      }
+      table tr:nth-child(2){
+        background-color: gray;
+      }
+      table tr:not(:first-child,:last-child) td:first-child{
+        background-color: gray;
+      }
+  
+      table tr:last-child, table tr:first-child{
+        background-color: red;
+        font-weight:bold;
+        font-size:1.2em;
+
+      }
+      table tr:nth-last-child(2) td ,table tr:nth-last-child(3) td{
+        height:120px;
+        border-left: 1px solid gray;
+
+        border-right: 1px solid #FFF;
+      }
+
+    </style>
+</head>
+<body>
+ 
+    <table cellspacing="10" cellpadding="10">
+        <!--<caption align="bottom">tableau 1 : liste des produits ...</caption>-->
+        <tr>
+        <td rowspan="2">Lorem, ipsum dolor.</td>
+        <td colspan="2">Dolores, officiis neque.</td>
+    </tr>
+    <tr>
+        
+        <td>Rerum, beatae ducimus!</td>
+        <td>Reiciendis, nulla molestias!</td>
+    </tr>
+    <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Mollitia, rerum nemo.</td>
+        <td>Minima, exercitationem eius.</td>
+    </tr>
+    <tr>
+        <td>Lorem, ipsum dolor.</td>
+        <td>Explicabo, autem quam.</td>
+        <td>Soluta, assumenda eligendi.</td>
+    </tr>
+    <tr>
+        <td colspan="3">Lorem, ipsum dolor.</td>
+        
+    </tr>
+</table>
+
+
+
+    
+</body>
+</html>

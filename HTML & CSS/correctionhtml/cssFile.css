@@ -1,0 +1,28 @@
+p{
+    color:brown;
+}
+
+#a{
+
+    font-size:3em;
+}
+.c{
+
+    font-size: 2rem;
+}
+#e{
+   /* border-color: blue;
+    border-width: 2px;
+    border-style: solid;*/
+    border:2px solid blue;
+    text-align: center;
+}
+[class="c"]{
+    font-style:italic;
+    color:chartreuse;
+}
+[class="c"]+p{
+
+    color:crimson;
+
+}
