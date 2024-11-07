@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>TP_Position</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Open Sans condensed, Helvetica, sans-serif
+        }
+        .main {
+            width: 80vw;
+            height:60vh;
+            margin-block: 20vh;
+            margin-inline: 20vw;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .title {
+            position: absolute;
+            left: 50px;
+        }
+        
+        .list {
+            position: absolute;
+            width: 100%;
+            top: 60px;
+            left: 0;
+        }
+
+        .list ul {
+            list-style-type: none;
+        }
+
+        .list ul li:hover {
+            border-bottom: 1px solid black;
+        }
+
+        .list ul>li {
+            float: left;
+            padding-inline: 20px;
+        }
+
+        i {
+            font-size: 20px;
+            margin-inline-end: 15px;
+        }
+        .sections figure {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sections {
+            display:flex;
+            position: absolute;
+            width: 95%;
+            top: 100px;
+            left: 18px;
+            right: 18px;
+            margin-top: 20px;
+        }
+
+        .sections div   {
+            background-color: rgb(243, 189, 151);
+            border-radius: 10px;
+            margin-inline: 8px;
+            padding-inline: 10px
+        }
+
+        figure {
+            display: flex;
+            align-items: flex-start;
+            height: 120px;
+        }
+
+        .buttons {
+            position: absolute;
+            width: 100%;
+            top: 400px;
+            left: 50px;
+        }
+
+        .buttons button {
+            background-color: white;
+            height: 40px;
+        }
+
+        .buttons .see-all {
+            width: 400px;
+            margin: 0;
+        }
+
+        .buttons .vote {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Best Tools & Utilities Software</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Windows</li>
+                <li>Mac</li>
+                <li>Android</li>
+                <li>IOS</li>
+            </ul>
+        </div>
+        <div class="sections">
+            <div class="section1">
+                <figure>
+                    <i class="fa-solid fa-gear"></i>
+                    <figcaption class="description">
+                        VPN Gate Client Plug-In with SoftEther VPN Client 
+                        <br> Free
+                    </figcaption> 
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ipsam.</p>
+            </div>
+
+            <div class="section2">
+                <figure>
+                    <i class="fa-solid fa-earth-oceania"></i>
+                    <figcaption class="description">SuperAntiSpyware Free Edition <br> FREE</figcaption>
+    
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ipsam.</p>
+            </div>
+
+            <div class="section3">
+                <figure>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <figcaption class="description">Avira free security <br> FREE</figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ipsam.</p>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <button class="see-all">SEE ALL</button>
+            <button class="vote	">Voter</button>
+        </div>
+    </div>
+</body>
+</html>
