@@ -1,0 +1,33 @@
+.top-container {
+    background-image: linear-gradient(lightblue,white);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 50px;
+}
+#logo {
+    width: 100px;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: left;
+    padding: auto;
+}
+
+.title-center {
+;
+}
+
+.small-text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+

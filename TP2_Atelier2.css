@@ -1,0 +1,18 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100vh;
+    background-image: linear-gradient(lightblue,white);
+}
+.title-container {
+    background-color: lightblue;
+}
+
+a {
+    color: black;
+}
