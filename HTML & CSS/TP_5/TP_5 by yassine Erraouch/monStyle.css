@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Sacramento', Courier, monospace;
+
+}
+
+.header {
+    height: 120px;
+    width: 100%;
+    margin: 0;
+    background-color: #fdedfb;
+}
+
+
+
+.header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-inline-end: 15px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-block-start: 5px;
+}
+
+.header li {
+    margin: 0;
+    padding-inline: 30px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: rgb(245,140,210);
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.header li a:hover {
+    text-decoration: wavy underline;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    width: 100%;   
+    margin: 20px;
+    background-color: seashell;
+}
+
+.main .image img {
+    width: 100%; 
+    height: 400px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.main .image figcaption {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.main .bouquets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.main .bouquets .bouquet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.bouquets img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bouquet:hover {
+    outline: 1px solid rgb(245 ,140,210);
+    border-radius: 5px;
+}
+
+.bouquet p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: white;
+    border: 1px solid grey;
+    height: 40px;
+}
+
+button i {
+    color: rgb(245,140,210);
+}
+
+.price {
+    font-size: small
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 210px;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main {
+        background-color: seashell;
+        height: 100%;
+    }
+
+    .main .image img {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .main .bouquets {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .header {
+        height: 210px;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main {
+        background-color: seashell;
+        height: 100%;
+    }
+
+    .main .image img {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .main .bouquets {
+        display: flex;
+        flex-direction: column;
+    }
+}

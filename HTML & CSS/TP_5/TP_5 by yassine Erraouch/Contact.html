@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <title>Contact</title>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font-family: 'Sacramento', Courier, monospace;
+        }
+
+        body {
+            background-color: seashell;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            height: 20vh;
+        }
+
+        .header p {
+            font-size: 1.5em;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            height: 80vh;
+            padding-block: 20px;
+        }
+
+        .info {
+            padding-block: 120px;
+        }
+
+        .info ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .info ul li {
+            padding-inline: 5px;
+            font-size: 20px;
+        }
+
+        .form .form-title, .form .submit{
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .form td {
+            width: 200px;
+            height: 30px;
+            font-size: 1.2em;
+        }
+
+        button {
+            background: none;
+            border: none;
+            font-family: "Sacramento", 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        table {
+            border-spacing: 0 10px;;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nous contacter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, similique?</p>
+    </div>
+
+    <div class="main">
+        <div class="info">
+            <ul class="adresse">
+                <li><i class="fa-solid fa-house-chimney"></i></li>
+                <li>Adresse:</li>
+                <li>Rabat</li>
+            </ul>
+
+            <ul class="tel">
+                <li><i class="fa-solid fa-phone"></i></li>
+                <li>Téléphone:</li>
+                <li><a href="">06 00 00 00</a></li>
+            </ul>
+
+            <ul class="email">
+                <li><i class="fa-regular fa-envelope"></i></li>
+                <li>Email</li>
+                <li><a href="">contact@boutiquefleur.ma</a></li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <form action="">
+                <table>
+                    <tr>
+                        <td class="form-title" colspan="2">
+                            <h1>Formulaire de contact</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Votre Nom:</td>
+                        <td><input type="text" required pattern="[A-Z][a-z]{2,}"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Votre prénom:</td>
+                        <td><input type="text" required pattern="[A-Z]{1,}"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Votre email:</td>
+                        <td><input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Votre téléphone:</td>
+                        <td><input type="text" required pattern="\d{10}"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Votres adresse: </td>
+                        <td><textarea name="" id=""></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td class="submit" colspan="2">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
