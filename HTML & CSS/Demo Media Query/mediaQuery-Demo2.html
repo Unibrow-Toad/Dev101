@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style type="text/css">
+         li{
+            list-style-type: none;
+            width:180px;
+            text-align: center;
+            border:2px solid blue;
+            
+         }
+         li a{
+            text-decoration: none;
+         }
+        ul{
+            display: flex;
+            width:90%;
+            margin:20px auto;
+            padding:10px;
+            background-color: bisque;
+            justify-content: space-between;
+        }
+        @media(max-width:600px){
+            ul{
+                flex-direction: column;
+                align-items:center;
+            }
+
+            li{
+                width: 100%;
+            }
+        }
+
+
+
+  </style>
+
+
+
+
+
+</head>
+<body>
+    <ul>
+
+        <li><a href="#">Lorem.</a></li>
+        <li><a href="#">Minima!</a></li>
+        <li><a href="#">Omnis.</a></li>
+        <li><a href="#">Sunt!</a></li>
+    </ul>
+    
+</body>
+</html>
